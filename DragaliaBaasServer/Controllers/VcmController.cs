@@ -20,6 +20,7 @@ public class VcmController : ControllerBase
         _authorizationService = authorizationService;
     }
 
+/* Causes issues trying to summon, enter quests, or add stamina if data is sent here.
     [HttpGet]
     [Route("markets/{marketName:alpha}/bundles")]
     public IActionResult GetVcmBundleInfoForMarket(string marketName)
@@ -50,5 +51,7 @@ public class VcmController : ControllerBase
             return Ok(userAccount.GetVcmWalletsForMarket(market));
 
         return BadRequest("Invalid market.");
+
     }
+*/
 }
